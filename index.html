@@ -1,59 +1,32 @@
-/** CSS For main ListAnything Interface **/
-body {
-  background-color:#f4f4f4;
-}
-
-#list-anything-main {
-  padding:15px;
-}
-
-#list-anything-main button:first-child {
-  margin-left:0px;
-}
-
-#list-anything-main button {
-  padding:10px 15px 12px 15px;
-  margin:15px;
-  border-radius:4px;
-  border:none;
-  background:#80b3ff;
-  color:#fff;
-}
-
-#list-anything-main button span {
-  font-family: 'Lato', sans-serif;
-  font-size:16px;
-}
-h1 {
-  font-family: 'Lato', sans-serif;
-  margin:0px;
-}
-
-h2 {
-  margin:0px;
-  padding:0px;
-}
-
-.panel-container {
-    background:white;
-    border-radius:8px;
-    padding:15px;
-    width:100%;
-    float:left;
-    box-sizing: border-box;
-}
-
-#list-list {
-  list-style: none;
-  padding:0px;
-  margin:0px;
-}
-
-#list-list li {
-  border-bottom:1px solid #d2d2d2;
-  padding:15px;
-}
-
-#list-list li:last-child {
-  border-bottom:none;
-}
+<html>
+<head>
+    <link href="css/main-interface.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="list-anything-main">
+      <h1>Welcome to ListAnything</h1>
+      <p>Below you can choose a list to load or create a new list from scratch.</p>
+      <div class="panel-container">
+        <ul id="list-list">
+          <li>
+            <button>
+              <i class="fa fa-plus"></i>
+              <span>New List</span>
+            </button>
+          </li>
+          <li>
+            <span class="fa fa-truck"></span>
+            Trucks
+          </li>
+          <li>
+            <span class="fa fa-gamepad"></span>
+            Games
+          </li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
