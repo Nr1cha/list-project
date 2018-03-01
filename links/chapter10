@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>chapter 10</title>
+</head>
+
+<body>
+  <h1>chapter notes</h1>
+  <ol>
+    <li>this chapter uses the term "hard drive" as a generic term that covers all the drive types you learned about in chapter 9 "hard drive technologies". once you get into windows, the operating system doesn't particularly care if the drive is a magnetic
+      hard disk drive(HDD), a flash-based solid-state drive(SSD), or some hybrid combination of the two. the tools and steps for preparing the drives for data are the same</li>
+    <li>okay, if GPT stands for GUID partition table, i guess we had better see what GUID stands for, eh? GUID is the global unique identifier and is a technology that we'll look at a little further on in the chapter</li>
+    <li>techs often refer to MBR-partitioned drives as "MBR drives." the same holds true for GPT-partitioned drives, which many techs refer to as "GPT drives."</li>
+    <li>partitions don't always get drive letters. windows creates a small 100 MB primary partition named "system reserved" for essential windows boot files. see also the section "mounting partitions as folders," later in this chapter, for details. on a related
+      topic, the first primary windows partition is called"C:" because early PCs had one or two floppy drives installed and they got the "A:" and "B:" labels"</li>
+    <li>windows 8 and later can use a software RAID system called storage spaces that's distinct form dynamic disks. see the appropriately named sectionof theis chapter for the scoop</li>
+    <li>if you've ever been to a library and walked past all of the computers connected to the internet, down the stairs into a dark basementr, you might have seen a dusty old cabinet full of organized cards that have information about every book in the library.
+      this is a "card catalog" system, invented covers2000 years ago. that concept has been carried forward and implemented electronically as the basis for file systems in many partiions and volumes. these days, you probably wont encounter this phrase
+      anywhere outside of explanations for formatting. </li>
+    <li>hexadecimal characters cover the decimal numbers 0-15; and number 0-9, a-f; each character reflects the state of four binary characters. you add them up to make the number. so, 0000 in binary shows zero numbers and the hex number is 0. s when you
+      go up numerically in binary to 0001, this represents the number 1 in decimal and also in hex. the key to hex is when you reach the number 10. in binary, this looks like this: 1010. but because hex sticks with a single digit, it's represented as
+      A. B translates as 11 in decimal or 1011 in binary, and so on.</li>
+    <li>there is such a thing as "low-level formatting," but that's generally done at the factory and doesn't concern techs. this is especially true if your working with modern hard drives(post-2001). high-level formatting, as noted, creates the FAT and then
+      creates a blank root directory. this process is known in microsoft speak as a quick format. at your option, you can cause the format utility to test every sector to mark out the unusable ones in the FAT. this is called a full format. </li>
+  </ol>
+
+</body>
+
+</html>

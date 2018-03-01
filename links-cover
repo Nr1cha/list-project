@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>links to materials</title>
+  </head>
+  <body>
+<a href="chapter1">Chapter 1 path of the pc tech</a>
+<a href="chapter">chpater 2 operational procedures</a>
+<a href="chapter">chapter 3 the visible Computer</a>
+<a href="chapter">chapter 4 microprocessors</a>
+<a href="chapter">chapter 5 RAM</a>
+<a href="chapter">chapter 6 BIOS</a>
+<a href="chapter">chapter 7 motherboards</a>
+<a href="chapter">chapter 8 power supplies</a>
+<a href="chapter">chapter 9 hard drive technologies</a>
+<a href="chapter">chapter 10 implementing hard drives</a>
+<a href="chapter">chapter 11 essential peripherals</a>
+<a href="chapter">chapter 12 building a PC</a>
+<a href="chapter">chapter 13 windows under the hood</a>
+<a href="chapter">chapter 14 users, groups, and permissions</a>
+<a href="chapter">chapter 15 maintaining and optimizing OS's</a>
+<a href="chapter">chapter 16 working with the command line interface</a>
+<a href="chapter">chapter 17 troubleshooting operating systems</a>
+<a href="chapter">chapter 18 virtualization</a>
+<a href="chapter">chapter 19 Display technologies</a>
+<a href="chapter">chapter 20 Essentials of Networking</a>
+<a href="chapter">chapter 21 Local Area Networking</a>
+<a href="chapter">chapter 22 Wireless Networking</a>
+<a href="chapter">chapter 23 The Internet</a>
+<a href="chapter">chapter 24 Portable Computing</a>
+<a href="chapter">chapter 25 Understanding Mobile Devices</a>
+<a href="chapter">chapter 26 Care and Feeding of Mobile Devices</a
+<a href="chapter">chapter 27 Printers and Multifunction Devices</a
+<a href="chapter">chapter 28 Securing Computers</a>    
+  </body>
+</html>
