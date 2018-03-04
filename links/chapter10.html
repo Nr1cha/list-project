@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>chapter 10</title>
 </head>
-
 <body>
-  <h1>implementing hard drives</h1>
+  <h1>Implementing hard drives</h1>
     <h1>chapter goals</h1>
-  <ol type="1">
+  <ol type="I">
     <li>explain the partitions available in windows</li>
     <li>discuss hard drive formatting options</li>
     <li>partition and format hard drives</li>
     <li>maintain and troubleshoot hard drives</li>
   </ol>
   <h1>chapter notes</h1>
-  <ol type="I">
-    <li>this chapter uses the term "hard drive" as a generic term that covers all the drive types you learned about in chapter 9 "hard drive technologies". once you get into windows, the operating system doesn't particularly care if the drive is a magnetic
-      hard disk drive(HDD), a flash-based solid-state drive(SSD), or some hybrid combination of the two. the tools and steps for preparing the drives for data are the same</li>
-    <li>okay, if GPT stands for GUID partition table, i guess we had better see what GUID stands for, eh? GUID is the global unique identifier and is a technology that we'll look at a little further on in the chapter</li>
+  <ol type="1">
+    <li>this chapter uses the term "hard drive" as a generic term that covers all the drive types you learned about in chapter 9 "hard drive technologies".<br> once you get into windows, the operating system doesn't particularly care if the drive is a magnetic
+      hard disk drive(HDD), a flash-based solid-state drive(SSD),<br> or some hybrid combination of the two. the tools and steps for preparing the drives for <br>data are the same</li>
+    <li>okay, if GPT stands for GUID partition table, i guess we had better see what GUID stands for, eh? GUID is the global unique identifier and is a <br>technology that we'll look at a little further on in the chapter</li>
     <li>techs often refer to MBR-partitioned drives as "MBR drives." the same holds true for GPT-partitioned drives, which many techs refer to as "GPT drives."</li>
-    <li>partitions don't always get drive letters. windows creates a small 100 MB primary partition named "system reserved" for essential windows boot files. see also the section "mounting partitions as folders," later in this chapter, for details. on a related
-      topic, the first primary windows partition is called"C:" because early PCs had one or two floppy drives installed and they got the "A:" and "B:" labels"</li>
-    <li>windows 8 and later can use a software RAID system called storage spaces that's distinct form dynamic disks. see the appropriately named sectionof theis chapter for the scoop</li>
-    <li>if you've ever been to a library and walked past all of the computers connected to the internet, down the stairs into a dark basementr, you might have seen a dusty old cabinet full of organized cards that have information about every book in the library.
-      this is a "card catalog" system, invented covers2000 years ago. that concept has been carried forward and implemented electronically as the basis for file systems in many partiions and volumes. these days, you probably wont encounter this phrase
+    <li>partitions don't always get drive letters. windows creates a small 100 MB primary partition named "system reserved" for essential windows boot files. <br>see also the section "mounting partitions as folders," later in this chapter, for details. on a related
+      topic, the first primary windows partition is called"C:"<br> because early PCs had one or two floppy drives installed and they got the "A:" and "B:" labels"</li>
+    <li>windows 8 and later can use a software RAID system called storage spaces that's distinct form dynamic disks. see the appropriately named <br>sectionof theis chapter for the scoop</li>
+    <li>if you've ever been to a library and walked past all of the computers connected to the internet, down the stairs into a dark basementr, <br>you might have seen a dusty old cabinet full of organized cards that have information about every book in the library.
+      this is a "card catalog" system, invented covers 2000 years ago. <br>that concept has been carried forward and implemented electronically as the <br>basis for file systems in many partiions and volumes. these days, you probably wont encounter this phrase
       anywhere outside of explanations for formatting. </li>
-    <li>hexadecimal characters cover the decimal numbers 0-15; and number 0-9, a-f; each character reflects the state of four binary characters. you add them up to make the number. so, 0000 in binary shows zero numbers and the hex number is 0. s when you
-      go up numerically in binary to 0001, this represents the number 1 in decimal and also in hex. the key to hex is when you reach the number 10. in binary, this looks like this: 1010. but because hex sticks with a single digit, it's represented as
+    <li>hexadecimal characters cover the decimal numbers 0-15; and number 0-9, a-f; each character reflects the state of four binary characters. <br>you add them up to make the number. so, 0000 in binary shows zero numbers and the hex number is 0. s when you
+      go up numerically in binary to 0001, <br>this represents the number 1 in decimal and also in hex. the key to hex is when you reach the number 10.<br>in binary, this looks like this: 1010. but because hex sticks with a single digit, it's represented as
       A. B translates as 11 in decimal or 1011 in binary, and so on.</li>
-    <li>there is such a thing as "low-level formatting," but that's generally done at the factory and doesn't concern techs. this is especially true if your working with modern hard drives(post-2001). high-level formatting, as noted, creates the FAT and then
-      creates a blank root directory. this process is known in microsoft speak as a quick format. at your option, you can cause the format utility to test every sector to mark out the unusable ones in the FAT. this is called a full format. </li>
+    <li>there is such a thing as "low-level formatting," but that's generally done at the factory and doesn't concern techs. this is especially true <br>if your working with modern hard drives(post-2001). high-level formatting, as noted, creates the FAT and then
+      creates a blank root directory. <br>this process is known in microsoft speak as a quick format. at your option, you can cause the format utility to <br>test every sector to mark out the unusable ones in the FAT. this is called a full format. </li>
+      <li>Microsoft has never released the exact workings of NTFS to the public.</li>
+      <li>An exabyte is 260 bytes; a zettabyte is 270 bytes. For comparison, a terabyte is 240 bytes. Remember from your binary practice that each superscript <br>number doubles the overall number, so 241 = 2 TB, 242 = 4 TB, and so on. That means a zettabyte is really, really big!</li>
+      <li>Refer to Chapter 9, “Hard Drive Technologies,” for the many ways to get to Disk Management.</li>
+      <li>SSDs work great with some space types and not others. With a simple two-way or three-way mirror, go for it. You’ll add some speed and lots of resiliency. <br>With parity spaces, on the other hand, the nature of how SSDs function inside might cause premature failure. Best to use HDDs with parity spaces.</li>
+      <li>The “Maintaining and Troubleshooting Hard Drives” section applies primarily to HDDs, not SSDs. The few parts that apply to the latter have been salted <br>into the discussion.</li>
+      <li>If you happen to have one of those blazingly fast solid-state drives, you don’t have to defrag your drive. In fact, you should never defrag an SSD, <br>because it can shorten its lifetime. Windows will not defragment SSDs automatically.</li>
+      <li>If you ever lose a hard drive that contains absolutely critical information, you can turn to a company that specializes in hard drive data recovery. <br>The job will be expensive—prices usually start around $1000 (U.S.)—but when you have to have the data, such companies are your only hope. <br>Do a Web search for “data recovery” or check the Yellow Pages for companies in this line of business.</li>
+  </ol>
+  <h1>chapter exam tips</h1>
+  <ol type="1">
+    <li>Only one master boot record and one partition table within that master boot record exist per MBR disk. Each partition has a partition boot sector.</li>
+    <li>Extended partitions do not receive drive letters, but the logical drives within an extended partition do.</li>
+    <li>Only the lower-end editions of Windows Vista and Windows 7 don’t support dynamic disks. Almost every version and edition you’ll run into these days<br> supports dynamic disks.</li>
+    <li>CompTIA refers to a hidden partition that contains a restorable copy of an installed OS as a factory recovery partition.</li>
+    <li>CompTIA may ask you how to recover a deleted file. If the file is still in the Recycle Bin, simply browse to the Recycle Bin, right-click on the <br>deleted file, and select Restore. If the file was deleted and bypassed the Recycle Bin or for any other reason is no longer there, Microsoft offers no utility that can recover or restore the file. You must resort to one of the third-party utilities that are available. Let’s say you just emptied your Recycle Bin. You now save one more file, taxrec.xls, a big spreadsheet that will take six clusters, into the same folder that once held mom.txt. As Windows writes the file to the drive, it <br>overwrites the space that mom.txt used, but it needs three more clusters. The next three available clusters are 3AC4, 3AC5, and 3AC6.</li>
+    <li>FAT32 only supports drives up to 2 TB and files up to 4 GB. The newer file system, called exFAT or FAT64, breaks the 4-GB file-size barrier, <br>supporting files up to 16 exabytes (EB) and a theoretical partition limit of 64 zettabytes (ZB). Microsoft recommends a partition size of up to 512 TB on today’s larger USB flash drives, which should be enough for a while. The exFAT file system extends FAT32 from 32-bit cluster entries to 64-bit cluster entries in the file table. Like FAT32, on the other hand, exFAT still lacks all of NTFS’s extra features such as permissions, compression, and encryption.</li>
+    <li>Know the difference between FAT32, FAT64/exFAT, and NTFS for the exam. Now, if you’re like me, you might be thinking, “Why don’t we just use NTFS?” <br>And I would say, “Good point!” Microsoft, however, sees NTFS as too powerful for what most of us need from flash drives. For example, flash drives don’t need NTFS permissions. But if for some reason you really want to format large USB flash drives with NTFS, Windows will gladly allow you to do so.</li>
+    <li>Know the differences between a quick format vs. a full format for the exam. You have a few more tasks to complete at this screen. You can add a <br>volume label if you want. You can also choose the size of your clusters allocation unit size. There’s no reason to change the default cluster size, so leave that alone but you can sure speed up the format if you select the Perform a quick format checkbox. This will format your drive without checking every cluster. It’s fast and a bit risky, but new hard drives almost always come from the factory in perfect shape so you must decide whether to use it or not. Last, if you chose NTFS, you may <br>enable file and folder compression. If you select this option, you’ll be able to right click any file or folder on this partition and compress it. To compress a file or folder, choose the one you want to compress, right click, and select Properties. Then click the Advanced button and turn compression on see Figure 10-34. Compression is handy for opening up space on a hard drive that’s filling up, but it also slows down disk access, so use it only when you need it.
+    </li>
+    <li>When you move a dynamic disk from one computer to another, it shows up in Disk Management as a foreign drive. You can import a foreign drive into<br> the new system by right-clicking the disk icon and selecting Import Foreign Disks. To convert a basic disk to dynamic, just right-click the drive icon and select Convert to Dynamic Disk (see Figure 10-35). The process is very quick and safe, although the reverse is not true. The conversion from dynamic disk to basic disk first requires you to delete all volumes off of the hard drive.</li>
+    <li>The CompTIA A+ 902 exam objectives mention “splitting” partitions. To be clear, you never actually split a partition. If you want to turn one <br>partition into two, you need to remove the existing partition and create two new ones, or shrink the existing partition and add a new one to the unallocated space. If you see the term on the exam, know that this is what CompTIA means. Assigning/Changing Drive</li>
+    <li>Disk Management is the go-to tool in Windows when adding drives or adding arrays to a system.</li>
+    <li>A storage pool is a collection of physical drives that enables you to flexibly add and expand capacity. Storage spaces are virtual drives that <br>are created from storage pool free space. Storage spaces have resiliency and fixed provisioning. Storage Spaces enables you to do one more very cool action: future-proof your storage needs. The thin provisioning feature means you can create a space with more capacity than your current physical drives provide. You might have a storage pool composed of two 2-TB drives and one 3-TB drive, laid out as a two-way mirror. Rather than limit your new space to a 3-TB capacity, you can assign <br>whatever capacity you want, such as 12 TB, because you know your movie collection will grow. When you start to reach the capacity of the physical drives in the pool, Storage Spaces will tell you and enable you to add more physical capacity at that time. Thin provisioning means you don’t have to redo an array or space when you reach the limits of current hardware.
+    </li>
+    <li>CompTIA A+ uses the terms CHKDSK and check disk rather than Error-checking.</li>
   </ol>
 
+<em>Check out the excellent Chapter 10 Show! and Click! simulations “Resizing a Partition” at the Total Seminars Training Hub: http://totalsem.com/90x. <br>These give you a quick shot at addressing probable simulation questions on the 902 exam.</em>
 </body>
-
 </html>
