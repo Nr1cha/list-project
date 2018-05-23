@@ -1,0 +1,4 @@
+/*FCC follow along with lessons*/
+var myName = nick;
+
+var sum = 10 + 10;
